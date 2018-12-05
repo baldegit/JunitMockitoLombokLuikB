@@ -1,0 +1,31 @@
+package com.balde.lombok01;
+
+import com.balde.bean.ApiClientConfiguration;
+import com.balde.bean.ApiClientConfiguration.ApiClientConfigurationBuilder;
+import com.balde.bean.LoginResult;
+import com.balde.bean.User;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+        User u1 = new User(1, "BALDE", "Ibrahima", 34);
+        System.out.println(u1.toString());
+        
+        LoginResult l = new LoginResult("x", "x", "x", "x");
+        ApiClientConfiguration config = 
+        		new ApiClientConfigurationBuilder()
+        		.host("apiserver.com")
+        		.port(443)
+        		.useHttps(true)
+        		.username("myusername")
+        		.password("secret")
+        	.build();
+        
+    }
+}

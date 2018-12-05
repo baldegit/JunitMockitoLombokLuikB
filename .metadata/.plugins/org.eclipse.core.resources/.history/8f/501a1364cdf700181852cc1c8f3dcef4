@@ -1,0 +1,64 @@
+package com.balde.beans;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class MyNumberTest {
+	
+	private MyNumber number1, number2;
+	
+	public static void setUpBeforeClass() throws Exception {
+		System.out.println("----------------------------------");
+		this.n
+	}
+
+	@AfterClass
+	public static void tearDownAfterClass() throws Exception {
+		System.out.println("----------------------------------");
+	}
+
+	@Before
+	public void setUp() throws Exception {
+		
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void testMyNumber() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testMyNumberInt() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGetNumber() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testSetNumber() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testAdd() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testDiv() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.balde.lombok01;
+
+import com.balde.bean.User;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+        User u1 = new User(1, "BALDE", "Ibrahima", 34);
+    }
+}

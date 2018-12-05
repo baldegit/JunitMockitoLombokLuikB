@@ -1,0 +1,12 @@
+package com.balde.bean;
+
+import lombok.Builder;
+
+@Builder
+public class ApiClientConfuguration {
+	
+	private String nom;
+	private String prenom;
+	private String age;
+	
+}

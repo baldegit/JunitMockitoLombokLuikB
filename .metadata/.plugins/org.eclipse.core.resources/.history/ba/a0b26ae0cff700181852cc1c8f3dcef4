@@ -1,0 +1,79 @@
+package com.balde.beans;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class MyNumberTest {
+	
+	private MyNumber number1, number2;
+	
+	public static void setUpBeforeClass() throws Exception {
+		System.out.println("----------------------------------");
+	}
+
+	@AfterClass
+	public static void tearDownAfterClass() throws Exception {
+		System.out.println("----------------------------------");
+	}
+
+	@Before
+	public void setUp() throws Exception {
+		System.out.println("Run @Befor");
+		this.number1 = new MyNumber(11);
+		this.number2 = new MyNumber(22);
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		System.out.println("Run @After");
+	}
+
+	@Test
+	public void testMyNumber() {
+		System.out.println("Run @Test testMyNumber()");
+	}
+
+	@Test
+	public void testMyNumberInt() {
+		System.out.println("Run @Test testMyNumberInt");
+	}
+
+	@Test
+	public void testGetNumber() {
+		System.out.println("Run @Test testGetNumber");
+		int number = 1398;
+		number1.setNumber(number);
+		assertEquals("Erreur dans getNumber", number, number1.getNumber());
+	}
+
+	@Test
+	public void testSetNumber() {
+		System.out.println("Run @Test testSetNumber");
+		int number = 1395;
+		number2.setNumber(number);
+		assertEquals("Erreur dans getNumber", number, number2.getNumber());
+	}
+
+	@Test
+	public void testAdd() {
+		System.out.println("Run @Test testAdd");
+		assertEquals("erreur dans add()", 33, number1.add(number2).getNumber());
+		assertEquals("erreur dans add()", 55, number1.add(number2).getNumber());
+	}
+
+	@Test
+	public void testDiv() {
+		System.out.println("Run @Test testDiv");
+		assertEquals("error in div()", 2, number2.div(number1).getNumber());
+		assertEquals("error in div()", 0, number2.div(number1).getNumber());
+		
+		number2.setNumber(0);
+		number1.div(number2);
+	}
+
+}

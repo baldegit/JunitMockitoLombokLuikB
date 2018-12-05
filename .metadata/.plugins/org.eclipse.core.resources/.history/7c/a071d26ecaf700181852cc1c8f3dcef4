@@ -1,0 +1,44 @@
+package com.balde.beans;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class CalculatorTest {
+
+	@Test
+	public void testAdd() {
+		assertEquals("erruer dans add()", 2, Calculator.add(1, 1));
+		assertEquals("erruer dans add()", 0, Calculator.add(-1, 1));
+		assertEquals("erruer dans add()", 0, Calculator.add(1, -1));
+		assertEquals("erruer dans add()", -2, Calculator.add(-1, -1));
+		
+		assertNotEquals("erruer dans add()", -2, Calculator.add(-1, -2));
+	}
+
+	@Test
+	public void testSub() {
+		assertEquals("erruer dans sub()", 0, Calculator.sub(1, 1));
+		assertEquals("erruer dans sub()", -2, Calculator.sub(-1, 1));
+		assertEquals("erruer dans sub()", 2, Calculator.sub(1, -1));
+		assertEquals("erruer dans sub()", 0, Calculator.sub(-1, -1));
+		
+		assertNotEquals("erruer dans add()", -2, Calculator.add(-1, -2));
+	}
+
+	@Test
+	public void testMul() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testDivInt() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testDivReal() {
+		fail("Not yet implemented");
+	}
+
+}

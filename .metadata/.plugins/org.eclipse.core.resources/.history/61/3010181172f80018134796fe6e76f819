@@ -1,0 +1,14 @@
+package com.balde.bean;
+
+public class LoggerTest {
+	
+	private String pays;
+	private int age;
+	public LoggerTest() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+}

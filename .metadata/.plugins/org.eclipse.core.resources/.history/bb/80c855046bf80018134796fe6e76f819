@@ -1,0 +1,14 @@
+package com.balde.bean;
+import lombok.Builder;
+
+//The following could make for a sample configuration class for a REST API client:
+public @Builder
+public class ApiClientConfiguration {
+	
+	private String host;
+	private int port;
+	private boolean useHttps;
+	
+	private String username;
+	private String password;
+}

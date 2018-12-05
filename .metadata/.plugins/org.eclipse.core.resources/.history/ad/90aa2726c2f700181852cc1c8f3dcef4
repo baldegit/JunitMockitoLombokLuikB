@@ -1,0 +1,7 @@
+package com.balde.beans;
+
+import junit.framework.TestCase;
+
+public class CalculatorTest extends TestCase {
+
+}
